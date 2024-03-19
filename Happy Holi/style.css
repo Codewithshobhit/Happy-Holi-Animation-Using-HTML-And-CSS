@@ -1,0 +1,101 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: poppins, sans-serif;
+
+}
+body{
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    background-size: cover;
+    
+}
+.navbar{
+    margin-top: 10px;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    filter:drop-shadow(0 0 10px white);
+}
+
+.myinfo
+{
+    position: relative;
+    top: 200px;
+    left: 150px;
+    width: 500px;
+    color:white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.73);
+   
+
+
+}
+
+.nav-link
+{
+    color:white;
+}
+.nav-item{
+color: white;
+margin-left: 20px;
+}
+.btn{
+    border:none;
+    color:white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+.holi{
+   
+    color:transparent;
+    background-clip: border-box;
+    color: whitesmoke;
+    /* list-style: none; */
+    font-size: 20px;
+    font-weight: bold;
+    /* position: relative; */
+    /* top: 0; */
+}
+h1{
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.nav-link:hover
+{
+   color: rgb(255, 0, 0);
+   text-shadow: 0 0 20px black;
+}
+video
+{
+    position: absolute;
+    left:00px;
+    bottom: 00px;
+    z-index: -2;
+    height: auto;
+    /* width: 100%; */
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(100);
+}
+.hue{
+    color: rgb(240, 81, 2);
+    
+    font-weight: bold;
+    animation: hue 5s infinite;
+}
+
+@keyframes hue{
+    0%{
+        -webkit-filter: hue-rotate(0deg);
+    }
+    100%{
+
+        -webkit-filter: hue-rotate(700deg);
+    }
+}
