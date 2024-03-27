@@ -1,0 +1,97 @@
+.loader {
+    position: absolute;
+    top: 4%;
+    left: 0.5%;
+}
+
+.bubble {
+    animation: expand 0.75s ease-in-out infinite;
+    border-radius: 20px;
+    display: inline-block;
+    transform-origin: center center;
+    margin: 0 3px;
+    width: 20px;
+    height: 20px;
+}
+
+.bubble:nth-child(1) {
+    background: #27ae60;
+}
+
+.bubble:nth-child(2) {
+    animation-delay: 180ms;
+    background: #f1c40f;
+}
+
+.bubble:nth-child(3) {
+    animation-delay: 360ms;
+    background: #e67e22;
+}
+
+.bubble:nth-child(4) {
+    animation-delay: 540ms;
+    background: #2980b9;
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.55);
+    }
+}
+
+/*######## */
+/* basic stuff */
+.outer {
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.cubes {
+    list-style: inline;
+    margin: 0;
+}
+
+.cube {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #333333;
+    opacity: 0;
+}
+
+/* animation */
+
+.top .cube:nth-child(1) {
+    animation: pulse 2s infinite;
+}
+
+.top .cube:nth-child(2) {
+    animation: pulse 2s 1s infinite;
+}
+
+.bottom .cube:nth-child(1) {
+    animation: pulse 2s 1.5s infinite;
+}
+
+.bottom .cube:nth-child(2) {
+    animation: pulse 2s 0.5s infinite;
+}
+
+@keyframes pulse {
+    10% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+}
